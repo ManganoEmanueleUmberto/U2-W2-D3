@@ -1,0 +1,15 @@
+@import "./colors";
+
+@each $key, $value in $buttons-colors {
+  .btn-#{$key} {
+    background-color: $value;
+    color: $font-color;
+    border: 1px solid adjust-color($value, $lightness: 15%);
+    border-radius: 50px;
+    font-family: inherit;
+    cursor: pointer;
+    &:hover {
+      background-color: adjust-color($value, $blackness: 10%);
+    }
+  }
+}
