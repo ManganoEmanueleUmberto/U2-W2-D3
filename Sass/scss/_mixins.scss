@@ -3,3 +3,13 @@
   box-shadow: $box-shadow;
   border: $border;
 }
+
+@mixin grid($value) {
+  @if ($value == 2) {
+    width: 49%;
+  } @else if($value == 3) {
+    width: 32%;
+  } @else {
+    width: 20%;
+  }
+}

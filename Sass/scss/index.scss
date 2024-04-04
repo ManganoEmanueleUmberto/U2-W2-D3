@@ -118,8 +118,9 @@ body {
   .imgs {
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
     img {
-      width: 20%;
+      @include grid(4);
       max-height: 200px;
       object-fit: cover;
       aspect-ratio: 16/9;
